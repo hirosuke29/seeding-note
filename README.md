@@ -1,51 +1,36 @@
-# タルホコムギコムギ栽培管理アプリケーション
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## 目的
+## Getting Started
 
-2023年冬から2024年春に予定のタルホコムギ約1,100系統の栽培管理を行うことが目的である。具体的には、開花期などの各種形質を管理する。
+First, run the development server:
 
-## 背景
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-このシステムができる前まではノートやスプレッドシートで栽培を管理していた。
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-2021年冬から2022年春はノートによる管理を行っていた。この方法では、
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- 後の統計解析の際にPC上にデータを移すコスト
-- ノートの作成コスト
-- 紛失リスク
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-などといった課題があった。
+## Learn More
 
-2022年冬から2023年春はスプレッドシートによる管理を行っていた。この方法では、
+To learn more about Next.js, take a look at the following resources:
 
-- 編集でミスしてしまうリスク
-- データを吹きとばしてしまうリスク
-- スマホ操作時の誤操作リスク
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-といった課題があった。
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-本年度 (2023年冬から2024年春) は栽培する個体数が約1,100個体と多いため、システム開発を行うことによりこれらの問題の解決を試みる。
+## Deploy on Vercel
 
-## 価値
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-- データが紛失されにくくなり、信頼性が上がる
-
-## 要件
-
-### 機能要件
-- 植物の個体番号に、表現型やメタデータなどのデータ及びサンプリングなどの行動を紐づけることができる。
-- 個体番号を利用して、植物の交配を管理できる。
-- 表現型やメタデータはcsvファイルにエクスポートできる。
-- スマートフォン及びPCの両方からシステムを操作できる。
-
-## 設計
-
-- 本システムはWebアプリケーションとして実装する。
-  - PC及びスマートフォンの両方から同じデータを参照したいのと、作業者が2人以上になる可能性が高いためである。
-
-## 開発
-
-- フロントエンドは `frontend/README.md`
-- バックエンドは `backend/README.md`
-
-を参照すること。
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
