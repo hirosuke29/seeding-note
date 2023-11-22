@@ -1,0 +1,12 @@
+version: '3'
+services:
+  db:
+    image: cockroachdb/cockroach:v23.1.12
+    restart: always
+    ports:
+      - 26257:26257
+      - 8080:8080
+    volumes:
+      - ./cockroach-data:/cockroach/cockroach-data
+    command: start-single-node --advertise-addr 'localhost' --insecure
+    
