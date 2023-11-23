@@ -24,4 +24,5 @@ jobs:
         name: "gcloud"
         run: |
           gcloud auth login --brief --cred-file="${{ steps.auth.outputs.credentials_file_path }}"
+          gcloud config set project "${{ secrets.GCP_PROJECT_ID }}"
           gcloud services list
