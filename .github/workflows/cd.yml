@@ -1,8 +1,8 @@
 name: Deploy to GCP
 on:
-  pull_request:
+  push:
     branches:
-      - release
+      - test
 
 permissions:
   id-token: write
